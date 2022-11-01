@@ -14,7 +14,7 @@ function Header() {
               Build your brand’s recognition and get detailed insights on how
               your links are performing.
             </p>
-            <button className="get-started">get started</button>
+            <button className="get-started" tybe>get started</button>
           </div>
         </div>
         <div className="header__right">

@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column-reverse;
   gap: 37px;
+  margin-bottom: 9.2rem;
 }
 
 .header__left {
@@ -59,6 +60,7 @@ h1 span {
     margin-inline: auto;
     max-width: 1108px;
     margin-top: 6rem;
+    /* margin-bottom: 5rem; */
   }
 
   .header__left {

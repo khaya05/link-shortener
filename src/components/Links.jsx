@@ -12,12 +12,12 @@ function Links() {
     },
     {
       long: 'https://www.linkedin.com/company/frontend-mentor',
-      short: 'https://www.linkedin.com/company/frontend-mentor',
+      short: 'https://rel.ink/gob3X9',
     },
   ];
 
   return (
-    <div>
+    <div className='form-container'>
       <form>
         <input type="text" placeholder="shorten a link here..." />
         {false && <p>please add a link</p>}
@@ -30,11 +30,11 @@ function Links() {
           const { long, short } = link;
           return (
             <article key={index}>
-              <div>
-                <p>{long}</p>
-                <div>
-                  <p>{short}</p>
-                  <button type="button">copy</button>
+              <div className='links-container'>
+                <p className='long-link'>{long}</p>
+                <div className='short-link-container'>
+                  <p className='short-link'>{short}</p>
+                  <button type="button" className='copy-link'>copy</button>
                 </div>
               </div>
             </article>

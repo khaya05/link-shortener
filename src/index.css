@@ -98,7 +98,8 @@ svg {
   --header-p: var(--fs-18);
   --body-p: var(--fs-16);
   --section-p: var(--fs-15);
-
+  --links-section: var(--fs-16)
+  
   --nav-links: var(--fs-18);
   --footer-nav-links-heading: var(--fs-16);
   --footer-nav-links: var(--fs-15);
@@ -106,6 +107,7 @@ svg {
 
 @media (min-width: 42em) {
   :root {
+    --links-section: var(--fs-20);
     --primary-heading: var(--fs-80);
     --secondary-heading: var(--fs-40);
 

@@ -4,17 +4,30 @@ form {
   padding: 24px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
+  background-image: url('../assets/bg-boost-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: -250% 5%;
 }
-
 form input,
 form button {
   width: 100%;
+  border-radius: 10px;
+}
+
+form input {
+  border: none;
+  padding: 10px;
+  height: 48px;
+  /* width: 100%; */
+}
+
+form input:focus {
+  border: none;
 }
 
 form button {
-  margin-left: 24px;
   padding-block: 12px;
   border: none;
   background: var(--Cyan);
@@ -25,4 +38,111 @@ form button {
 
 form button:hover {
   background: var(--Cyan-hover);
+}
+
+.form-container {
+  position: relative;
+  bottom: 5rem;
+}
+
+@media (min-width: 42em) {
+  form {
+    background-image: url('../assets/bg-shorten-desktop.svg');
+    flex-direction: row;
+  }
+
+  .form-container {
+    /* top: 3rem; */
+    bottom: 3rem;
+  }
+
+  form button {
+    margin: 0;
+    margin-left: 24px;
+    width: 188px;
+  }
+}
+
+.form-container article {
+  background: white;
+  border-radius: 5px;
+}
+
+article {
+  margin-top: 24px;
+}
+
+.short-link,
+.long-link {
+  display: block;
+  font-size: var(--links-section);
+  font-weight: 500;
+  width: 100%;
+  padding-block: 1rem;
+  /* font-family: 'Poppins'; */
+  font-style: normal;
+  text-overflow: ellipsis;
+  height: 48px;
+  overflow: hidden;
+}
+
+.long-link {
+  padding: 1rem;
+  color: var(--Very-Dark-Blue);
+  border-bottom: 1px solid var(--Grayish-Violet);
+}
+
+.short-link {
+  color: var(--Cyan);
+}
+
+.copy-link {
+  border: none;
+  width: 100%;
+  background: var(--Cyan);
+  color: white;
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding-block: 9px;
+  font-weight: 700;
+  /* margin: 0 1rem 1rem; */
+}
+
+.short-link-container {
+  padding: 0 1rem 1rem;
+}
+
+.copy-link:hover {
+  background-color: var(--Cyan-hover);
+}
+
+@media (min-width: 42em) {
+  .links-container, .short-link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .long-link{
+    /* padding-block: 1rem; */
+    margin: 0;
+    border: none;
+    width: 50%;
+  }
+
+  .short-link-container{
+    margin:0;
+    padding: 00;
+    padding: 1rem 24px;
+    width:40%;
+  }
+
+  .short-link {
+    text-align: end;
+  }
+
+  .copy-link{
+    margin-left: 24px;
+    width:103px;
+  }
 }
