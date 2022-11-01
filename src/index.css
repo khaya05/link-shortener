@@ -1,0 +1,119 @@
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* general styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+:root {
+  --Cyan: hsl(180, 66%, 49%);
+  --Cyan-hover: hsla(180, 56%, 75%, 1);
+  --Dark-Violet: hsl(257, 27%, 26%);
+  --Gray: hsl(0, 0%, 75%);
+  --Grayish-Violet: hsl(257, 8%, 63%);
+  --Very-Dark-Blue: hsl(257, 11%, 21%);
+  --Very-Dark-Violet: hsl(260, 8%, 14%);
+  --Very-Light-Violet: hsla(225, 32%, 95%, 1);
+
+
+  --fs-12: 0.75rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.135rem;
+  --fs-28: 1.75rem;
+  --fs-40: 2.5rem;
+  --fs-42: 2.2652rem;
+  --fs-80: 80px;
+
+  --space-197: 12.3125rem;
+
+  --primary-heading: var(--fs-42);
+  --secondary-heading: var(--fs-28);
+  --tertiary-heading: var(--fs-22);
+
+  --header-p: var(--fs-18);
+  --body-p: var(--fs-16);
+  --section-p: var(--fs-15);
+
+  --nav-links: var(--fs-18);
+  --footer-nav-links-heading: var(--fs-16);
+  --footer-nav-links: var(--fs-15);
+}
+
+@media (min-width: 42em) {
+  :root {
+    --primary-heading: var(--fs-80);
+    --secondary-heading: var(--fs-40);
+
+    --header-p: var(--fs-22);
+    --body-p: var(--fs-18);
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
