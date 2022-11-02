@@ -1,8 +1,11 @@
-import React from 'react'
+import '../styles/CTA.css'
 
 function CTA() {
   return (
-    <div>CTA</div>
+    <section className='CTA'>
+      <h2>Boost your links today</h2>
+      <button className='get-started'>get started</button>
+    </section>
   )
 }
 

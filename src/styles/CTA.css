@@ -1,0 +1,31 @@
+.CTA {
+  background-color: var(--Dark-Violet);
+  /* background-color: var(--Dark-Violet-Footer); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../assets/bg-boost-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+
+.CTA h2 {
+  font-size: var(--secondary-heading);
+  font-size: 700;
+  margin: 90px auto 2rem;
+  color: white;
+}
+.CTA button {
+  margin-bottom: 57px;
+}
+
+@media (min-width: 42rem) {
+  .CTA {
+    background-image: url('../assets/bg-boost-desktop.svg');
+    background-size: cover;
+  }
+  .CTA h2 {
+    margin: 57 auto 2rem;
+  }
+}

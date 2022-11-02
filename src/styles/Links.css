@@ -145,4 +145,12 @@ article {
     margin-left: 24px;
     width:103px;
   }
+
+  .form-container{
+    margin-bottom: 120px;
+  }
 }
+
+  /* .form-container{
+    margin-bottom: 80px;
+  } */

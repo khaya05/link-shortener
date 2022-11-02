@@ -2,18 +2,18 @@
 import '../styles/Links.css'
 function Links() {
   const links = [
-    {
-      long: 'https://www.frontendmentor.io',
-      short: 'https://rel.ink/k4lKyk',
-    },
-    {
-      long: 'https://twitter.com/frontendmentor',
-      short: 'https://rel.ink/gxOXp9',
-    },
-    {
-      long: 'https://www.linkedin.com/company/frontend-mentor',
-      short: 'https://rel.ink/gob3X9',
-    },
+    // {
+    //   long: 'https://www.frontendmentor.io',
+    //   short: 'https://rel.ink/k4lKyk',
+    // },
+    // {
+    //   long: 'https://twitter.com/frontendmentor',
+    //   short: 'https://rel.ink/gxOXp9',
+    // },
+    // {
+    //   long: 'https://www.linkedin.com/company/frontend-mentor',
+    //   short: 'https://rel.ink/gob3X9',
+    // },
   ];
 
   return (
@@ -26,7 +26,7 @@ function Links() {
         </button>
       </form>
       <div>
-        {links.map((link, index) => {
+        {links?.map((link, index) => {
           const { long, short } = link;
           return (
             <article key={index}>
