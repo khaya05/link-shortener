@@ -1,6 +1,13 @@
+import ReactDom from 'react-dom';
 import { stats } from './data';
 
 import '../styles/Stats.css';
+
+function HorizontalLine() {
+  return (
+    <>{ReactDom.createPortal(<div />, document.querySelector('#hor-line'))}</>
+  );
+}
 
 function Stats() {
   return (
@@ -10,23 +17,22 @@ function Stats() {
         Track how your links are performing across the web with our advanced
         statistics dashboard.
       </p>
-      {/* <div className="hor-line"></div>
-      <div className="ver-line"></div> */}
+      <HorizontalLine />
       <div className="stats-container">
         {stats.map((stat, index) => {
           const { icon, heading, paragraph, id } = stat;
-          const style =
-            screen.width > 672
-              ? { transform: `translate(${index * 120}px, '0px')` }
-              : {};
           return (
-            <article key={id} style={style}>
-              <div className="icon-container">
-                <img src={icon} alt="icon" />
+            <>
+              <div key={id} className={`feature-container feature_${index}`}>
+                <div className="icon-container">
+                  <img src={icon} alt="icon" />
+                </div>
+                <article  className={` feature`}>
+                  <h3>{heading}</h3>
+                  <p>{paragraph}</p>
+                </article>
               </div>
-              <h3>{heading}</h3>
-              <p>{paragraph}</p>
-            </article>
+            </>
           );
         })}
       </div>
