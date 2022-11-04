@@ -27,7 +27,7 @@ Users should be able to:
   - The `input` field is empty
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [here](https://khaya-link-shortner.netlify.app/)
 
 ## My process
 
