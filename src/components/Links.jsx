@@ -9,7 +9,6 @@ function Links() {
   const [links, setLinks] = useState([]);
   const [longLink, setLongLink] = useState('');
   const [shortLink, setShortLink] = useState('');
-  const [isEditing, seIsEditing] = useState(false);
 
   const getShortLink = async (longLink) => {
     axios
@@ -28,7 +27,7 @@ function Links() {
   const handleSubmit = (e) => {
     e.preventDefault();
     getShortLink(longLink);
-    if (!loading && shortLink !== '') {
+    if (shortLink !== '') {
       setLinks((oldState) => {
         return [
           ...oldState,
