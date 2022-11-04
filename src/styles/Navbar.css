@@ -30,6 +30,7 @@
   display: block;
   width: 327px;
   top: 90px;
+  right: 2rem;
   padding: 30px 24px;
   border-radius: 10px;
   background-color: var(--Dark-Violet);
@@ -98,32 +99,28 @@ nav .container {
     list-style: none;
     margin-left: 1.5rem;
   }
-  
+
   .nav-links-container ul li a {
-    /* height: 100%; */
     text-transform: capitalize;
     text-decoration: none;
     color: var(--Grayish-Violet);
     font-weight: 700;
-    /* transition: all 300ms; */
   }
 
-  .nav-links-container ul li a:hover{
-    color:var(--Very-Dark-Blue);
-    /* border-bottom: 2px solid var(--Cyan); */
+  .nav-links-container ul li a:hover {
+    color: var(--Very-Dark-Blue);
   }
 
-  .sign-up a{
+  .sign-up a {
     width: 105px;
     color: white !important;
     transition: all 300ms;
   }
 
-  .sign-up a:hover{
+  .sign-up a:hover {
     background: var(--Cyan-hover);
   }
   .logo {
     width: 120px;
   }
-  
 }

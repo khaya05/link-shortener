@@ -4,8 +4,6 @@ footer {
 }
 
 .logo {
-  /* background:white; */
-
   margin-inline: auto;
 }
 
@@ -48,7 +46,6 @@ footer {
 .sublinks-container ul li a {
   text-decoration: none;
   color: hsla(0, 0%, 75%, 1);
-  
 }
 
 .sublinks-container ul li a:hover {

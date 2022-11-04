@@ -9,10 +9,9 @@ function Links() {
   const [links, setLinks] = useState([]);
   const [longLink, setLongLink] = useState('');
   const [shortLink, setShortLink] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [isEditing, seIsEditing] = useState(false);
 
   const getShortLink = async (longLink) => {
-    setLoading(true);
     axios
       .get(`https://api.shrtco.de/v2/shorten`, {
         params: { url: longLink },
@@ -20,7 +19,6 @@ function Links() {
       .then((resp) => {
         const shorterLink = resp.data.result['full_short_link'];
         setShortLink(shorterLink);
-        setLoading(false);
       })
       .catch((err) => {
         if (err) console.log(err);
@@ -39,8 +37,6 @@ function Links() {
       });
       console.log(links);
     }
-
-    // setLongLink('');
   };
 
   const handleCopy = (id) => {
@@ -55,20 +51,20 @@ function Links() {
 
     const currentLink = links.find((link) => link.id === id);
     navigator.clipboard.writeText(currentLink.short);
-
-    setText(false);
   };
 
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="shorten a link here..."
-          value={longLink}
-          onChange={(e) => setLongLink(e.target.value)}
-        />
-        {/* {false && <p>please add a link</p>} */}
+        <div className="form__input-container">
+          <input
+            type="text"
+            placeholder="shorten a link here..."
+            value={longLink}
+            onChange={(e) => setLongLink(e.target.value)}
+          />
+          {/* {<p>please add a link</p>} */}
+        </div>
         <button type="submit">shorten it!</button>
       </form>
       <div>

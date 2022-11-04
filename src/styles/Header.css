@@ -14,14 +14,13 @@
 }
 
 .header__right {
-  width: 100%;
+  width: 90%;
   height: 337px;
 }
 
 .header__right img {
   height: 100%;
-  object-fit: cover;
-  object-position: 24px;
+  object-fit: contain;
 }
 
 h1 {

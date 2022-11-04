@@ -4,7 +4,7 @@ form {
   padding: 24px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   background-image: url('../assets/bg-boost-mobile.svg');
   background-repeat: no-repeat;
@@ -20,7 +20,6 @@ form input {
   border: none;
   padding: 10px;
   height: 48px;
-  /* width: 100%; */
 }
 
 form input:focus {
@@ -43,6 +42,10 @@ form button:hover {
 .form-container {
   position: relative;
   bottom: 5rem;
+}
+
+.form__input-container{
+  width: 100%;
 }
 
 @media (min-width: 42em) {
@@ -105,7 +108,6 @@ article {
   border-radius: 5px;
   padding-block: 9px;
   font-weight: 700;
-  /* margin: 0 1rem 1rem; */
 }
 
 .short-link-container {
@@ -150,7 +152,3 @@ article {
     margin-bottom: 120px;
   }
 }
-
-  /* .form-container{
-    margin-bottom: 80px;
-  } */

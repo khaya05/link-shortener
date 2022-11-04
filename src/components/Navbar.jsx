@@ -45,6 +45,7 @@ function Navbar() {
           href="#"
           className="bars"
           onClick={() => setShowLinks((oldState) => !oldState)}
+          aria-controls="mobile navigation"
         >
           {showLinks ? <FaTimes /> : <FaBars />}
         </a>
