@@ -21,7 +21,7 @@ function Navbar() {
           <img src={logo} alt="" />
         </a>
         <div className={`nav-links-container ${showLinks ? 'show-links' : ''}`}>
-          <ul role="list" className='links'>
+          <ul  className='links'>
             <li>
               <a href="#">Features</a>
             </li>
@@ -45,7 +45,6 @@ function Navbar() {
           href="#"
           className="bars"
           onClick={() => setShowLinks((oldState) => !oldState)}
-          aria-controls="mobile navigation"
         >
           {showLinks ? <FaTimes /> : <FaBars />}
         </a>
