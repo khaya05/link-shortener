@@ -61,7 +61,6 @@ function Links() {
             value={longLink}
             onChange={(e) => setLongLink(e.target.value)}
           />
-          {/* {<p>please add a link</p>} */}
         </div>
         <button type="submit">shorten it!</button>
       </form>
