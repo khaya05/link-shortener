@@ -4,12 +4,12 @@ import '../styles/Main.css';
 
 function Main() {
   return (
-    <div className="main">
+    <main role='main' className="main">
       <div className="container">
         <Links />
         <Stats />
       </div>
-    </div>
+    </main>
   );
 }
 

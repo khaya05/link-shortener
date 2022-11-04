@@ -4,7 +4,7 @@ import '../styles/Footer.css';
 
 function Footer() {
   return (
-    <footer>
+    <footer role='contentinfo'>
       <div className="footer__container">
         <div className="footer__logo-container">
           <img src={logo} alt="" className="logo" aria-label='logo'/>

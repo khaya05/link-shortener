@@ -3,7 +3,7 @@ import '../styles/Header.css';
 
 function Header() {
   return (
-    <header>
+    <header role='banner'>
       <div className="header__container">
         <div className="header__left">
           <div>

@@ -15,10 +15,10 @@ function Navbar() {
   }, [screen.width]);
 
   return (
-    <nav>
+    <nav role='navigation'>
       <div className="container">
         <a href="" className="logo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="" aria-label='logo'/>
         </a>
         <div className={`nav-links-container ${showLinks ? 'show-links' : ''}`}>
           <ul  className='links'>
