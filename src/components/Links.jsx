@@ -34,7 +34,6 @@ function Links() {
           { id: nanoid(), long: longLink, short: shortLink, copied: false },
         ];
       });
-      console.log(links);
     }
   };
 
